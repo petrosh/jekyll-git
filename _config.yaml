@@ -1,0 +1,8 @@
+title: GitHub Backend
+baseurl: /github-backend
+description: Use GitHub as backend
+js:
+  - octokat
+  - cookies
+css:
+  - style

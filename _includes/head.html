@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <!-- LOAD SITE STYLES -->
+  {% if site.css %}{% for style in site.css %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ style }}.css">
+  {% endfor %}{% endif %}
+  <!-- LOAD PAGE STYLES -->
+  {% if page.styles %}{% for style in page.styles %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ style }}.css">
+  {% endfor %}{% endif %}
+</head>
+<body>
