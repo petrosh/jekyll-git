@@ -1,15 +1,7 @@
-# github-backend
+# Jekyll Junior
 
-Use GitHub as backend
+Minimal Jekyll setup
 
-## Index
-
-- Read auth cookie
-- If not, then `login` (no token on code)
-- If valid, then `md5` and compare with repo `cookie.json` (no token on code, anonymus `.read()`)
-- If not the same, stay on `login`
-- If the same, you are logged: `form`
-
-## Login
-
-## Form
+- `site` and `pages` scripts (coffeescript ☕️)
+- `site` and `pages` stylesheets (sass ♨️)
+- `octokat` and `cookie` ready
