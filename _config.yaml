@@ -1,6 +1,6 @@
-title: GitHub Backend
-baseurl: /github-backend
-description: Use GitHub as backend
+title: Jekyll Junior
+baseurl: /jekyll.junior
+description: Minimal Jekyll setup
 js:
   - octokat
   - cookies
