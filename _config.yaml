@@ -1,5 +1,5 @@
 title: Jekyll Junior
-baseurl: /jekyll.junior
+baseurl: /jekyll-junior
 description: Minimal Jekyll setup
 js:
   - octokat
