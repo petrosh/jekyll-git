@@ -1,8 +1,12 @@
 title: Jekyll Junior
-baseurl: /jekyll-junior
+baseurl: /jekyll-git
 description: Minimal Jekyll setup
 js:
   - octokat
   - cookies
 css:
+  - normalize # please use normalize.css v2.1.1
+  - octicons/octicons
   - style
+googlefont:
+  - Roboto+Slab:400,100,300,700

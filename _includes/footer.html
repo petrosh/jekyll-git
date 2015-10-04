@@ -1,3 +1,15 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="column column-half">
+      <p>
+        <a href="#" class="gh-colophon"><span class="octicon octicon-code"></span> with <span class="octicon octicon-heart"></span> by <span class="octicon octicon-logo-github"></span>.</a>
+      </p>
+    </div>
+    <div class="column column-half">
+      <p class="sfc-link">Ramarrows is a trademark of the <a href="#">aosta production</a>.</p>
+    </div>
+  </div>
+</footer>
 <!-- LOAD SITE SCRIPTS -->
 {% if site.js %}
   {% for script in site.js %}<script src="{{ site.baseurl }}/assets/js/{{ script }}.js"></script>
@@ -6,6 +18,5 @@
 {% if page.js %}
   {% for script in page.js %}<script src="{{ site.baseurl }}/assets/js/{{ script }}.js"></script>
   {% endfor %}{% endif %}
-</main>
 </body>
 </html>

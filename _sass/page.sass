@@ -1,0 +1,338 @@
+//@extend-elements
+//original selectors
+//h1, h2, h3, h4, h5, h6
+@mixin typography
+	padding: 0
+	margin: 0 0 1rem 0
+	font-weight: 600
+	text-rendering: optimizeLegibility
+
+
+
+html
+	font-size: 14px
+	line-height: 1.4
+
+
+h1
+	@include typography
+	font-size: 2.5rem
+	line-height: 1.2
+
+h2
+	@include typography
+	font-size: 1.8rem
+	line-height: 1.2
+
+h3
+	@include typography
+	font-size: 1.3rem
+	line-height: 1.2
+
+h4
+	@include typography
+	font-size: 1rem
+
+h5
+	@include typography
+
+h6
+	@include typography
+
+p
+	margin: 0 0 1rem 0
+	// max-width: 42rem BYPASS
+	&.lead
+		font-size: 1.3rem
+
+	&.fine-print
+		font-size: 0.7rem
+		font-weight: 300
+		line-height: 1.6
+
+
+strong
+	font-weight: 600
+
+em
+	font-style: italic
+
+.site-header, .light-section
+	padding: 20px 0 10px
+	border-bottom: 1px solid $color_timberwolf_approx
+	h1
+		margin: 0
+
+.site-title
+	display: block
+	text-align: center
+	height: 48px
+	color: $color_merlin_approx
+	.git-lfs-logo-svg
+		width: 100%
+		max-width: 412px
+	.mega-octicon
+		color: $color_pomegranate_approx
+		font-size: 2.8rem
+		-ms-transform: rotate(180deg)
+		-webkit-transform: rotate(180deg)
+		transform: rotate(180deg)
+
+
+@media(min-width: 800px)
+	.site-title .git-lfs-logo-svg
+		width: 412px
+
+
+.site-nav
+	text-align: center
+	.page-link
+		margin-left: 20px
+		// font-weight: bold BYPASS
+		font-size: 1.125rem
+		line-height: 48px
+		&:first-child
+			margin-left: 0
+
+
+
+.site-footer
+	background: $color_green_white_approx
+	border-top: 1px solid $color_timberwolf_approx
+	padding: 40px 0
+	margin-top: 2rem
+	p
+		text-align: left
+		margin-bottom: 0
+
+
+.gh-colophon
+	display: block
+	color: $color_pine_cone_approx
+	.octicon
+		font-size: 20px
+		position: relative
+		top: 1px
+		&.octicon-logo-github
+			top: 2px
+
+
+
+.wrapper
+	max-width: 1084px
+	padding: 0
+	margin: 0 auto
+	zoom: 1
+	&:before
+		content: ""
+		display: table
+
+	&:after
+		content: ""
+		display: table
+		clear: both
+
+
+.column
+	float: left
+	width: 100%
+	padding-left: 1.5rem
+	padding-right: 1.5rem
+
+@media(min-width: 900px)
+	.column.column-half
+		width: 50%
+	.column.column-third
+		width: 33%
+	.column.column-2third
+		width: 67%
+	.column.column-20
+		width: 20%
+	.column.column-80
+		width: 80%
+
+
+.home-hero
+	background: $color_green_white_approx
+	padding: 24px 0
+	border-bottom: 1px solid $color_timberwolf_approx
+	h1
+		font-size: 1.7142857143rem
+		font-weight: 600
+		color: $color_merlin_approx
+		margin: 0 0 1rem
+		line-height: 1.2
+
+	.button
+		margin-left: auto
+		margin-right: auto
+		.download-details
+			font-weight: 400
+			font-size: 1rem
+
+
+	.secondary-cta
+		text-align: center
+		display: block
+		max-width: 350px
+		margin-left: auto
+		margin-right: auto
+
+	.secondary-download
+		margin-top: 1rem
+
+	code
+		font-weight: 400
+		background: $color_periglacial_blue_approx
+		//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+		border-radius: 5px
+		padding: .15rem .5rem
+		border: 1px solid $color_timberwolf_approx
+
+	.how-it-works-graphic
+		width: 100%
+
+	.graphic h2
+		font-weight: 400
+		font-size: 1.5rem
+
+
+@media(max-width: 900px)
+	.home-hero .graphic
+		padding-top: 2rem
+		border-top: 1px solid $color_timberwolf_approx
+		margin-top: 2rem
+
+
+@media(min-width: 1100px)
+	.home-hero .how-it-works-graphic
+		width: 500px
+
+
+.install-steps
+	padding: 0
+	margin: 1rem 0
+	list-style-position: inside
+	li
+		font-weight: 600
+		p
+			font-weight: 400
+
+		pre
+			font-weight: 400
+			background: $color_periglacial_blue_approx
+			//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+			border-radius: 5px
+			padding: 1rem
+			border: 1px solid $color_timberwolf_approx
+
+
+
+.features-list
+	padding: 0
+	margin: 1rem 0
+	list-style: none
+
+.hero-octicon
+	background: $color_periglacial_blue_approx
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 100px
+	height: 60px
+	width: 60px
+	text-align: center
+	margin-bottom: 1rem
+	.mega-octicon
+		line-height: 60px
+		color: $color_natural_gray_approx
+
+
+.feature
+	padding: 1rem 0
+	overflow: hidden
+	h3
+		font-size: 1.375rem
+		margin: 0 0 1rem
+		font-weight: 400
+		color: $color_merlin_approx
+
+	p
+		margin-bottom: 0
+
+
+.dot-com-announcement
+	display: block
+	background: $color_periglacial_blue_approx
+	border: 1px solid $color_timberwolf_approx
+	text-align: center
+	margin-top: 1rem
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 5px
+	font-size: 1.125rem
+	padding: 1rem
+	color: $color_natural_gray_approx
+	span
+		text-decoration: underline
+		color: $color_deep_cerulean_approx
+
+// MEDIA
+
+@media(min-width: 700px)
+	html
+		font-size: 16px
+
+	.site-header
+		padding: 40px 0
+
+	.site-title
+		float: left
+
+	.site-nav
+		float: right
+
+	.site-footer
+		p
+			text-align: left
+
+		.sfc-link
+			text-align: right
+
+
+	.home-hero
+		h1
+			margin: 1rem 0
+			line-height: 1.5
+
+		.button
+			margin-bottom: 0
+			margin-right: 20px
+			margin-top: 0
+			//was .5rem
+
+		.secondary-cta
+			display: inline-block
+
+		.graphic h2
+			display: none
+
+
+	.hero-octicon
+		height: 88px
+		width: 88px
+		.mega-octicon
+			line-height: 88px
+			font-size: 38px
+
+
+	.feature
+		.hero-octicon
+			float: left
+			margin-right: 1rem
+			margin-bottom: 0
+
+		.content
+			padding-left: 104px
+			padding-left: calc(88px + 1rem)
+
+
+	.dot-com-announcement br
+		display: none

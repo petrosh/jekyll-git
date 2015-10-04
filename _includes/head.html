@@ -9,7 +9,21 @@
   {% if site.css %}{% for style in site.css %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ style }}.css">
   {% endfor %}{% endif %}
   <!-- LOAD PAGE STYLES -->
-  {% if page.styles %}{% for style in page.styles %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ style }}.css">
+  {% if page.css %}{% for style in page.css %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ style }}.css">
+  {% endfor %}{% endif %}
+  <!-- LOAD GOOGLE FONTS -->
+  {% if site.googlefont %}{% for gf in site.googlefont %}<link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ gf }}">
   {% endfor %}{% endif %}
 </head>
 <body>
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="column">
+        <h1><a class="site-title" href="/"><span class="mega-octicon octicon-globe"></span> Fork &amp; Play</a></h1>
+        <nav class="site-nav">
+          <a class="page-link" href="{{ site.baseurl }}/dark/">Dark</a>
+          <a class="page-link" href="{{ site.baseurl }}/">Light</a>
+        </nav>
+      </div>
+    </div>
+  </header>
